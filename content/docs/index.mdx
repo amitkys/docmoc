@@ -1,9 +1,33 @@
 ---
-title: Hello World
-description: Your first document
+title: Welcome to DocMoc
+description: "Introducing DocMoc: docs for all my projects"
 ---
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
+Welcome to the docs! You can start read my all projects listed in `/content/docs`.
+Hello World, **Bold**, _Italic_, ~~Hidden~~
+
+| Table | Description |
+| ----- | ----------- |
+| Hello | World       |
+
+[My Link](https://github.github.com/gfm)
+
+This also works: https://github.github.com/gfm.
+
+import { HomeIcon } from "lucide-react";
+
+<Cards>
+  <Card icon={<HomeIcon />} href="/" title="Home">
+    Go back to home
+  </Card>
+</Cards>
+
+```tsx
+<div>Hello World</div>  // [!code highlight]
+<div>Hello World</div>
+<div>Goodbye</div>
+<div>Hello World</div>
+```
 
 ## What is Next?
 
