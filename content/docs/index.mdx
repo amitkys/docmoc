@@ -5,31 +5,24 @@ description: "Introducing DocMoc: docs for all my projects"
 
 ## Introduction
 
-DocMoc shares all my projects’ documentation, including **project flow, tech stack, and everything related about my projects & learning**.
+DocMoc documents all my projects, covering **project flow, tech stack, and related insights**.
 
-[My Link](https://github.github.com/gfm)
+## My Projects
 
-This also works: https://github.github.com/gfm.
-
-import { HomeIcon } from "lucide-react";
+import {
+  PiNumberSquareOneFill,
+  PiNumberSquareTwoFill,
+  PiNumberSquareThreeFill,
+} from "@/app/components/icons/icons";
 
 <Cards>
-  <Card icon={<HomeIcon />} href="/" title="Home">
-    Go back to home
-
+  <Card icon={<PiNumberSquareOneFill />} href="/docs/sabnam" title="Sabnam">
+    Take mock tests for 10th, 12th, and Computer Science students.
   </Card>
-</Cards>
-
-```tsx
-<div>Hello World</div>  // [!code highlight]
-<div>Hello World</div>
-<div>Goodbye</div>
-<div>Hello World</div>
-```
-
-## What is Next?
-
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
+  <Card icon={<PiNumberSquareTwoFill />} href="/docs/chat" title="Chatting app">
+    Chat without signing in using just a room ID.
+  </Card>
+  <Card icon={<PiNumberSquareThreeFill />} href="/docs/kys" title="Patho Lab">
+    Used in real-world labs to simplify patient report management.
+  </Card>
 </Cards>
