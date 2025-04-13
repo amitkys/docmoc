@@ -7,12 +7,14 @@ description: "Introducing DocMoc: docs for all my projects"
 
 DocMoc documents all my projects, covering **project flow, tech stack, and related insights**.
 
-## My Projects
+## Project that I worked on
 
 import {
   PiNumberSquareOneFill,
   PiNumberSquareTwoFill,
   PiNumberSquareThreeFill,
+  PiNumberSquareFourFill,
+  PiNumberSquareFiveFill,
 } from "@/app/components/icons/icons";
 
 <Cards>
@@ -25,4 +27,40 @@ import {
   <Card icon={<PiNumberSquareThreeFill />} href="/docs/kys" title="Patho Lab">
     Used in real-world labs to simplify patient report management.
   </Card>
+  <Card
+    icon={<PiNumberSquareFourFill />}
+    href="/docs/test"
+    title="Note-Taking App"
+  >
+    A CRUD-based note-taking app.
+  </Card>
+  <Card icon={<PiNumberSquareFiveFill />} href="/docs/test" title="Wanderlust">
+    Securely create, manage, and gather user feedback.
+  </Card>
 </Cards>
+
+<Callout title="Notice">
+  We regularly update our project list with `new ones`.
+</Callout>
+
+## How DocMoc was built
+
+DocMoc was built using [Fumadocs](https://fumadocs.vercel.app). You can view the source code [here](https://github.com/fumadocs/docmoc).
+
+You can Create your own documentation with Fumadocs!
+
+```bash tab="npm"
+npm create fumadocs-app
+```
+
+```bash tab="pnpm"
+pnpm create fumadocs-app
+```
+
+```bash tab="yarn"
+yarn create fumadocs-app
+```
+
+```bash tab="bun"
+bun create fumadocs-app
+```

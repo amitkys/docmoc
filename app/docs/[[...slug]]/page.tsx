@@ -20,7 +20,13 @@ export default async function Page(props: {
   const MDX = page.data.body;
 
   return (
-    <DocsPage toc={page.data.toc} full={page.data.full}>
+    <DocsPage
+      toc={page.data.toc}
+      full={page.data.full}
+      footer={{
+        enabled: true // Remove the component prop to use default footer
+      }}
+    >
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>
       <DocsBody>
@@ -48,4 +54,4 @@ export async function generateMetadata(props: {
     description: page.data.description,
     metadataBase: new URL('http://yourwebsite.com'),
   });
-} 
+}
