@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
 
 
-const geist = Geist({
+export const geist = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
 });
@@ -19,7 +19,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <html lang="en"
       className={`${geist.className} ${mono.variable} antialiased`}
       suppressHydrationWarning>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen bg-background text-foreground">
         <RootProvider>{children}</RootProvider>
       </body>
     </html>

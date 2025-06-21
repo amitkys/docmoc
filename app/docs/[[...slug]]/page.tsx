@@ -27,9 +27,9 @@ export default async function Page(props: {
         enabled: true // Remove the component prop to use default footer
       }}
     >
-      <DocsTitle>{page.data.title}</DocsTitle>
+      <DocsTitle className="">{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>
-      <DocsBody>
+      <DocsBody className='text-foreground'>
         <MDX components={getMDXComponents({
           a: createRelativeLink(source, page)
         })} />
