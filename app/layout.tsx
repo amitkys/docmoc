@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
 
 
-export const geist = Geist({
+const geist = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
 });
