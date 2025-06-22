@@ -6,10 +6,8 @@
   "pages": [
     "---Introduction---",
     "index",
-    "what-is-fumadocs",
-    "comparisons",
-    "---Setup---",
-    "manual-installation",
+    "---Learning---",
+    "techStack",
     "...",
     "(integrations)",
     "---Writing---",
